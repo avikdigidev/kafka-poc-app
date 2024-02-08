@@ -60,7 +60,7 @@ latest -  latest means to read it from just now and only read the new messages s
             //subscribe to a topic
             consumer.subscribe(Arrays.asList(topic));
             while (true) {
-                log.info("consumer polling");
+
                 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));
                 for (ConsumerRecord<String, String> record : records) {
                     log.info(record.key() + "   -   " + record.value() + "   -   " + record.partition() + "   -   " + record.offset());

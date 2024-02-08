@@ -29,7 +29,7 @@ public class ProducerKeysApplication {
 String topic = "kafka_topic_poc";
 String key = "";
 String value = "test value ";
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             //create producer record
             //record with same key goes to same partition
             ProducerRecord<String, String> producerRecord = new ProducerRecord<>(topic,key+i, value+i);

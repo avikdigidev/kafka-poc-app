@@ -1,7 +1,6 @@
 package com.avikdigidev.kafkabasics;
 
 import org.apache.kafka.clients.producer.*;
-import org.apache.kafka.common.protocol.types.*;
 import org.apache.kafka.common.serialization.*;
 import org.slf4j.*;
 import org.springframework.boot.SpringApplication;
@@ -10,9 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.*;
 
 @SpringBootApplication
-public class KafkaBasicsApplication {
+public class ProducerApplication {
 
-    private static final Logger log = LoggerFactory.getLogger(KafkaBasicsApplication.class.getSimpleName());
+    private static final Logger log = LoggerFactory.getLogger(ProducerApplication.class.getSimpleName());
 
     public static void main(String[] args) {
         //create producer properties
@@ -37,7 +36,7 @@ public class KafkaBasicsApplication {
         //flush and close the producer
         producer.flush();
         producer.close();
-        SpringApplication.run(KafkaBasicsApplication.class, args);
+        SpringApplication.run(ProducerApplication.class, args);
     }
 
 }

@@ -36,7 +36,7 @@ public class ProducerApplication {
         //flush and close the producer
         producer.flush();
         producer.close();
-        SpringApplication.run(ProducerApplication.class, args);
+
     }
 
 }

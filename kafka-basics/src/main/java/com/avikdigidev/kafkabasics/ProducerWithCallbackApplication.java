@@ -42,7 +42,7 @@ public class ProducerWithCallbackApplication {
         //flush and close the producer
         producer.flush();
         producer.close();
-        SpringApplication.run(ProducerWithCallbackApplication.class, args);
+    //    SpringApplication.run(ProducerWithCallbackApplication.class, args);
     }
 
 }

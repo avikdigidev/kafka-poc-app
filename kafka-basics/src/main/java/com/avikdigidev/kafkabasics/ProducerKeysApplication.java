@@ -47,7 +47,7 @@ String value = "test value ";
         //flush and close the producer
         producer.flush();
         producer.close();
-        SpringApplication.run(ProducerKeysApplication.class, args);
+
     }
 
 }
